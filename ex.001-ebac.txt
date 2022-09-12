@@ -1,0 +1,5 @@
+A importancia do html, css e javascript para o desenvolvimento web é fundamental,
+afinal são essas 3 linguagens que são capazes de estruturar e dar sentido ao 
+documento, permite através do css dar vida, cores, posicionamentos e atraves do js,
+criar interações com o usuário permitindo que as aplicações se tornem mais atrativas
+e de facil usabilidade ao usuário final. 
