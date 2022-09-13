@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+header{
+    background-color: #1A2B5F;
+    color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ul{
+    display: flex;
+  
+}
+li{
+    list-style: none;
+}
+header a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+}
+main{
+    width: 800px;
+    margin: auto;
+}
+
+img{
+    height: 180px;
+}
+#sobre{
+    
+    display: flex;
+    padding: 30px;
+}
+#txt-area{
+    padding: 20px;
+}
+#contato{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    background-color: #1A2B5F;
+    padding: 30px;
+    color: white;
+}
