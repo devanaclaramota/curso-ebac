@@ -8,7 +8,7 @@ header{
     color: #ffffff;
     height: 80px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 ul{
@@ -24,7 +24,7 @@ header a {
     padding: 20px;
 }
 main{
-    width: 800px;
+    width: 1000px;
     margin: auto;
 }
 
