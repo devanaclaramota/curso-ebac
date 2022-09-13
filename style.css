@@ -3,13 +3,20 @@
     padding: 0px;
 
 }
+body{
+     font-family: 'Roboto', sans-serif;
+}
 header{
     background-color: #1A2B5F;
+    font-family: 'Bungee', cursive;
     color: #ffffff;
     height: 80px;
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+h1{
+    font-weight: normal;
 }
 ul{
     display: flex;
@@ -17,34 +24,82 @@ ul{
 }
 li{
     list-style: none;
+    font-size: 14px;
 }
 header a {
     text-decoration: none;
     color: white;
     padding: 20px;
 }
+
 main{
     width: 1000px;
     margin: auto;
 }
+h2{
+    padding-left: 35px;
+}
+h2,h3{
+    font-family: 'Bungee', cursive;
+    color: #1A2B5F;
+}
 
 img{
+    padding-top: 35px;
     height: 180px;
+}
+.logo{
+    height: 20px;
+    padding: 5px;
 }
 #sobre{
     
     display: flex;
     padding: 30px;
 }
-#txt-area{
+#cont-area{
     padding: 20px;
+   
+}
+textarea{
+    font-family: 'Roboto', sans-serif; 
+    resize: none;
+    width: 320px;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+}
+input , button{
+    font-family: 'Roboto', sans-serif;
+    width: 320px;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+
+}
+button{
+    background-color: #1A2B5F;
+    color: #ffffff;
+    font-family:'Bungee', cursive;
+    border: none;
+    cursor: pointer;
+ }
+ button:hover{
+    background-color:#6b79a3 ;
+ }
+input:focus, textarea:focus{
+    outline-color: #111a36;
 }
 #contato{
     display: flex;
     justify-content: space-around;
 }
+.redes{
+    height: 40px;
+}
 footer{
     background-color: #1A2B5F;
+text-align: center;
     padding: 30px;
     color: white;
 }

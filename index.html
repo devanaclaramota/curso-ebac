@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loja-games</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,41 +16,50 @@
         <h1>GAMES SHOP </h1>
         <nav>
             <ul>
-                <li><a href="#">Sobre a loja</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre a loja</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section id="sobre">
             <img src="Img-loja.jpg" alt="nossa loja">
-            <div id="txt-area">
+            <div id="cont-area">
                 <h2>Sobre a loja </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo autem eligendi nemo expedita labore ea natus repellendus hic. Atque sequi quas, maiores eaque vero beatae quaerat? Nemo animi sequi at.
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis fugiat quaerat mollitia doloribus inventore laborum tempore nam labore possimus, eveniet, quam ut nisi consequuntur commodi, minus rerum voluptate. Iste, voluptatem.
                 </p>
+                <ul>
+                        <li><img class="logo" src="nint.png" alt="logo nintendo"></li>
+                        <li><img class="logo" src="xbox.jpg" alt="logo xbox"></li>
+                        <li><img class="logo" src="pslogo.png" alt="logo playstation"></li>
+                </ul>
             </div>
         </section>
-        
+        <h2>Contato</h2>
         <section id="contato">
+            
             <article id="formulario">
-                <h2>Contato</h2>
+                
            
                 <h3>Fale conosco</h3>
                 <form action="#" method="post">
-                    <input placeholder="Seu nome" type="text" name="nome" id="nome"> <br>
-                    <input placeholder="Seu e-mail" type="email" name="emial" id="email"> <br>
-                    <input placeholder="Seu telefone (opcional)" type="tel" name="num" id="num"> <br>
-                    <textarea name="contato" id="contado" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea> <br>
-                    <input type="button" value="Enviar">
+                    <input placeholder="Seu nome" required type="text" name="nome" id="nome"> 
+                    <input required placeholder="Seu e-mail" type="email" name="emial" id="email"> 
+                    <input placeholder="Seu telefone (opcional)" type="tel" name="num" id="num"> 
+                    <textarea required name="contato" id="contado" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea> 
+                    <button type="submit">Enviar</button> 
                 </form>
             </article>
             <div id="redes">
                 <h3>Nos acompanhe</h3>
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
+                    <ul>
+                        <li><a href="#"><img class="redes" src="logo-insta.jpg" alt="logo instagram"></a></li>
+                        <li><a href="#"><img class="redes"
+                        src="logo-face.png" alt="logo logo-facebook"></a></li>
+                        <li><a href="#"><img class="redes" src="logo-youtube.png" alt="logo logo-youtube"></a></li>
+                    </ul>
             </div>
             <div id="end">
                 <h3>Venha até nós</h3>
@@ -57,7 +70,7 @@
     </main>
     <footer>
         
-        <p> ©2022 - Todos os direitos reservados</p>
+        <p> &copy;GameShop - 2022 - Todos os direitos reservados</p>
     </footer>
 </body>
 </html>
