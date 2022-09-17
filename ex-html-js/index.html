@@ -5,15 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ex-html-js</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Maior dos numeros</h1>
-    <form action="#" method="get">  
-        <input required placeholder="Digite um numero" type="number" name="n1" id="n1"> <br>
-        <input required placeholder="Digite outro numero" type="number" name="n2" id="n2"> <br>
-        <input type="submit" value="calcular" onclick="maior()">
+
+    <form action="#" method="get" id="form">  
+
+        <input required placeholder="Digite um numero" type="number" name="n1" id="tnum"> <br>
+
+        <input required placeholder="Digite outro numero" type="number" name="n2" id="tnum2"> <br>
+
+        <input id="btn" type="button" value="calcular" onclick="calcular()">
+
+        <p id="res"></p>
+
     </form>
-    <p id="res">A resposta vai aqui: </p>
+
+    
     <script src="main.js"></script>
 </body>
 </html>
