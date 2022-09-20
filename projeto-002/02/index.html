@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" action="#" method="get">
+        <input required placeholder="Disciplina" type="text" name="disciplina" id="disciplina">
+        <input type="number" required placeholder="Nota" min="0" max="10"  name="nota" id="nota">
+        <button type="submit" id="btn">Adicionar+</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da atividade</th>
+                <th>Nota</th>
+                <th>situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="materia">--</td>
+                <td id="valorNota">--</td>
+                <td>--</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Média</td>
+                <td>--</td>
+                <td>--</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="logica.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Calculadora de Médias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="form" action="#" method="get">
+        <input required placeholder="Disciplina" type="text" name="disciplina" id="disciplina">
+        <input required placeholder="Nota" type="text" name="nota" id="nota">
+        <button type="submit" id="btn">Adicionar+</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Nome da atividade</th>
+                <th>Nota</th>
+                <th>situação</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+            <tr>
+                <td id="atividade">--</td>
+                <td id="valorNota">--</td>
+                <td id="emoji">--</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Média</td>
+                <td id="valormedia" >--</td>
+                <td id="resultado">--</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="main.js"></script>
+</body>
+</html>

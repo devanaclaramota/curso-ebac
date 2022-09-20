@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lightgray;
+}
+form{
+    padding: 20px;
+}
+img{
+    width: 30px;
+
+}
+td, th{
+    padding: 10px;
+}
