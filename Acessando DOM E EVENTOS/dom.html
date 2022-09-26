@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1">Acessando o DOM por js</h1>
+    <form>
+        <input id="inputNome" autocomplete="off" placeholder="Nome" type="text">
+        <button id="btn" type="submit" onclick="adicionar()">Adicionar+</button>
+        <ul id="ul">
+            
+        </ul>
+    </form>
+
+    <script>
+
+        function adicionar(){
+           // let titulo = document.getElementById('h1')
+          //  titulo.innerHTML = 'Esse é o novo título'
+            //let item = document.getElementsByTagName('li')[0]
+            //item.innerHTML = 'maria'
+
+
+
+            let input = document.getElementById('inputNome')
+            let novoitem = document.createElement('li')
+            let text = document.createTextNode(input.value)
+            novoitem.appendChild(text)
+
+            let ul = document.getElementById('ul')
+            ul.appendChild(novoitem)
+
+            input.value = ''
+
+        }
+       
+    </script>
+</body>
+</html>

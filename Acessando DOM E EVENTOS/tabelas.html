@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM JS</title>
+</head>
+<body>
+    <h1>Inserindo dados na tebela através do DOM</h1>
+    <form action="#" method="get">
+        <input placeholder="Nome" id="nome" type="text">
+        <input placeholder="Telefone" type="tel" name="" id="tel">
+        <button type="submit" onclick="adicionar()">Adicionar+</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Telefone</th>
+        </thead>   
+        <tbody id="tbody">
+            <tr id="tr">
+
+            </tr>
+           
+        </tbody>   
+    </table>
+    <script>
+        function adicionar(){
+             
+            addNome()
+            addTel()
+
+
+        }
+
+
+
+            function addNome(){
+            let inputNome = document.getElementById('nome')
+            let novoNome = document.createElement('td')
+            let textNome = document.createTextNode(inputNome.value)
+            novoNome.appendChild(textNome)
+            let tr = document.getElementById('tr')
+            tr.appendChild(novoNome)
+            inputNome.value = ''
+            }
+            
+            function addTel(){
+                let tel = document.getElementById('tel')
+                let novoTel = document.createElement('td')
+                let textTel = document.createTextNode(tel.value)
+                novoTel.appendChild(textTel)
+                let tr = document.getElementById('tr')
+                tr.appendChild(novoTel)
+
+                tel.value = ''
+
+
+            }
+
+    </script>
+
+</body>
+</html>
