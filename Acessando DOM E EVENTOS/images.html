@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiconando fotos</title>
+</head>
+<body>
+     <h1>Adicionando imagens por meio do DOM</h1>
+     <form action="#" method="get">
+        <input type="url" name="" id="image">
+        <button type="submit" onclick=adicionar()>Adicionar fotos</button>
+     </form>
+     <div id="tela">
+        <img src="" alt="">
+     </div>
+     <script>
+       function adicionar(){
+        let url = document.getElementById('image')
+        let novaImagem = document.createElement('img.src')
+        let imagemTela = document.createTextNode(url.value)
+        novaImagem.appendChild(imagemTela)
+        let addimg = document.getElementById('img.src')
+        addimg.appendChild(novaImagem)
+
+
+
+        }
+        
+     </script>
+</body>
+</html>

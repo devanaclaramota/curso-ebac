@@ -8,28 +8,30 @@
 </head>
 <body>
     <h1 id="h1">Acessando o DOM por js</h1>
-    <form>
+    <form action="#" id="form" >
         <input id="inputNome" autocomplete="off" placeholder="Nome" type="text">
         <button id="btn" type="submit" onclick="adicionar()">Adicionar+</button>
-        <ul id="ul">
-            
-        </ul>
     </form>
+    <div>
+        <ul id="ul">
+           
+        </ul>
 
-    <script>
-
-        function adicionar(){
-           // let titulo = document.getElementById('h1')
-          //  titulo.innerHTML = 'Esse é o novo título'
-            //let item = document.getElementsByTagName('li')[0]
-            //item.innerHTML = 'maria'
-
+    </div>
+        
 
 
+<script>
+            
+          function adicionar(){
+          /*  let titulo = document.getElementById('h1')
+            titulo.innerHTML = 'Esse é o novo título'
+            let item = document.getElementsByTagName('li')[0]
+            item.innerHTML = 'maria'*/
             let input = document.getElementById('inputNome')
             let novoitem = document.createElement('li')
             let text = document.createTextNode(input.value)
-            novoitem.appendChild(text)
+            novoitem = document.appendChild(text)
 
             let ul = document.getElementById('ul')
             ul.appendChild(novoitem)
@@ -37,7 +39,6 @@
             input.value = ''
 
         }
-       
-    </script>
+ </script>
 </body>
 </html>

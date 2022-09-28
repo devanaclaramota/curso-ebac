@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto 02</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? family= Roboto:wght@400;700 & display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <article>
+        <h1> <img class="logo" src="images/logo.png" alt="capelo e diploma"> Calculadora de Médias</h1>
+
+
+
+
+        <form action="#" id="form-ativ">
+            <input  placeholder="Nome da atividade" required type="text" name="atividade" id="atividade">
+            <input  type="number" required placeholder="Nota" min="0" max="10" name="nota" id="nota">
+           
+           <button class="btn" type="submit">Adicionar+</button>
+        </form>
+
+
+
+
+
+
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome da atividade</th>
+                    <th>Nota</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
+            <tbody id="conteudo">
+                <tr>
+                    <td>--</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Média final</td>
+                    <td id="resultmedia">--</td>
+                    <td id="situacaofinal" > <span class="resultado aprovado reprovado">Situação</span> </td>
+                </tr>
+            </tfoot>
+        </table>
+    </article>
+
+
+    <script src="main.js"></script>
+</body>
+</html>

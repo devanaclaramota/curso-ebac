@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+        <input type="text" name="" id="item">
+        <button type="submit">Enviar</button>
+    </form>
+    <div>
+        <ul id="ul">
+        
+        </ul>
+    </div>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            let item = document.getElementById('item')
+            let novoitem = document.createElement('li')
+            let txt = document.createTextNode(item.value)
+            novoitem.appendChild(txt)
+
+            let ul = document.getElementById('ul')
+            ul.appendChild(novoitem)
+
+            item.value = ''
+
+
+        })
+      /*  function lista(){
+            let item = document.getElementById('item')
+            let novoitem = document.createElement('li')
+            let txt = document.createTextNode(item.value)
+            novoitem.appendChild(txt)
+
+            let ul = document.getElementById('ul')
+            ul.appendChild(novoitem)
+
+            item.value = ''
+        }
+    </script>
+</body>
+</html>

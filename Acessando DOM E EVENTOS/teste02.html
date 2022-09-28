@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vamos fazer uma lista</h1>
+    <form action="#" id="form" method="get">
+        <input placeholder="email" type="email" name="email" id="email">
+        <input placeholder="nome" type="text" name="nome" id="nome">
+        <input placeholder="telefone" type="tel" name="tel" id="tel">
+        <button type="submit">Adicionar a lista</button>
+    </form>
+    <div id="div">
+
+    </div>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            //aqui vão as funcoes
+            tela()
+
+        })
+        function tela(){
+            let email = document.getElementById('email')
+            let nome = document.getElementById('nome')
+            let tel = document.getElementById('tel')
+            let div = document.getElementById('div')
+            div.innerHTML = `Obrigada por se cadastrar ${nome.value} e voce recebera uma mensagem em ${email.value}  um sms de verificação sera enviado para ${tel.value}.`
+        }
+
+
+
+
+    </script>
+</body>
+</html>
