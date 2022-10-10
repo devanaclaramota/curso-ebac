@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela brasileirão</title>
+</head>
+<body>
+        <form action="#" id="form">
+            <input placeholder="time1" type="text" name="" id="t1">
+            <input placeholder="time2" type="text" name="" id="t2">
+            <button type="submit">enviar</button>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Jogo de ida</th>
+                    <th>Jogo da volta </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>-----</td> 
+                    <td>-----</td>
+                </tr>
+            </tbody>
+                
+            
+        </table>
+        <script>
+            let form = document.getElementById('form')
+            form.addEventListener('submit' , function (e){
+                e.preventDefault()
+                addlinha()
+                attTabela()
+
+
+            })
+            let linha = ''
+            function addlinha(){
+                let t1 = document.getElementById('t1')
+                let t2 = document.getElementById('t2')
+
+                let novalinha = '<tr>'
+                    novalinha += `<td> ${t1.value} <td/>`
+                    novalinha += `<td> ${t2.value} <td/>`
+                    novalinha += '<tr/>'
+
+                    linha += novalinha
+
+                    t1.value = ''
+                    t2.value = ''
+
+            }
+            function attTabela(){
+                let body = document.querySelector('tbody')
+                body.innerHTML = linha
+            }
+        </script>
+</body>
+</html>

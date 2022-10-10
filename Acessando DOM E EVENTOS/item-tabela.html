@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            margin: 40px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form id="form" action="#"  method="get">
+        <input placeholder="Time A " type="text" name="" id="time1">
+        X
+        <input placeholder="Time B " type="text" name="" id="time2">
+        <button type="submit">Jogar </button>
+    </form>
+    <table>
+        <tbody>
+            <tr>
+                <td>time1</td> 
+                <td>time2</td>
+            </tr>               
+        </tbody>
+    </table>
+    <script>
+        let form = document.getElementById('form')
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+            addLinha()
+            att()
+        })
+        let linha = '' //esta aqui para nao ser resetada ao ser lida
+        function addLinha(){
+        
+                time1 = document.getElementById('time1')
+                time2 = document.getElementById('time2')
+
+                let novaLinha = '<tr>'
+                    novaLinha += `<td> ${time1.value} <td/>`
+                    novaLinha += `<td> ${time2.value} <td/>`
+                    novaLinha += '<tr/>'
+                    
+                    linha += novaLinha
+
+                    time1.value = ''
+                    time2.value = ''
+        }
+        function att(){
+
+
+             let tbody = document.querySelector('tbody')
+
+            tbody.innerHTML = linha
+        }
+    </script>
+</body>
+</html>

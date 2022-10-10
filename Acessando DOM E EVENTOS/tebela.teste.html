@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste-tabela</title>
+</head>
+<body>
+    <h1>Inserindo dados na tebela através do DOM</h1>
+    <form id="form" action="#" method="get">
+        <input placeholder="Nome" id="nome" type="text">
+        <input placeholder="Telefone" type="tel" name="" id="tel">
+        <button type="submit">Adicionar+</button>
+        <button type="reset">Cancelar</button>
+    </form>
+    <table>
+        <thead>
+            <th>Nome</th>
+            <th>Telefoness</th>
+        </thead>   
+        <tbody id="tbody">
+            <tr id="tr">
+                <td>-----</td>
+                <td>-----</td>
+            </tr>
+           
+        </tbody>   
+    </table>
+    <script>
+        const form = document.getElementById('contatos');
+
+        form.addEventListener('submit', function(e) {
+        e.preventDefault();
+    
+    adicionaLinha();
+    atualizaTabela();
+})
+let linhasTabela = '';
+function adicionaLinha() {
+
+    //Pega o elemento todo do iput de nome
+    const inputNomeContato = document.getElementById('nome');
+
+    //Pega o elemento todo do iput de telefone
+    const inputTelefoneContato = document.getElementById('tel');
+
+    //Concatena as Tags Tr e Td para acrescentar novas linhas em sua tabela e atribui toda vez 
+    //que é chamado esse metodo os novos valores da proxima linha na variavel linhasTabela
+
+        let linha = '<tr>';
+        linha += `<td>${inputNomeContato.value}</td>`;
+        linha += `<td>${inputTelefoneContato.value}</td>`;
+        linha += '</tr>';
+    
+        linhasTabela += linha;
+    
+    inputNomeContato.value = ''; //Limpa o input de nome
+    inputTelefoneContato.value = ''; //Limpa o input de Telefone
+}
+
+
+function atualizaTabela() {
+    //Busca no seu Html o seletor com tbody para inserir dentro do html o valor de sua variavel linhasTabela antes preenchida com Tr e Td
+    const corpoTabela = document.querySelector('tbody');
+    corpoTabela.innerHTML = linhasTabela;
+}
+    </script>
+</body>
+</html>

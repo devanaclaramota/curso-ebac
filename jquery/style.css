@@ -2,10 +2,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 header{
-    background-color: rgb(105, 45, 208);
+    background-color: #692dd0;
     color: white;
     text-align: center;
     height: 70px;
@@ -14,18 +15,24 @@ header{
     justify-content: center;
 }
 header button{
-    background-color: rgb(46, 187, 46);
-    color: white;
+    background-color: #2ebb2e;
+    color: #ffffff;
     border-radius: 5px;
     border: none;
-    box-shadow: 1px 2px 10px rgb(114, 114, 114);
+    box-shadow: 1px 2px 10px #727272;
+    font-weight: bold;
     height: 30px;
     padding: 10px;
     margin: 10px;
     cursor: pointer;
 }
+header button:hover{
+    background-color: white;
+    color: #2ebb2e ;
+    font-weight: bold;
+}
 form{
-    background-color: rgb(96, 177, 218);
+    background-color: #60b1da;
     text-align: center;
     display: none;
    
@@ -37,20 +44,21 @@ input{
     margin: 10px;
 }
 #adicionar{
-    background-color:rgb(46, 187, 46);
+    background-color:#2ebb2e;
     color: white;
-    border: none;
+    border: 1px solid black;
     padding: 5px;
     cursor: pointer;
 
 }
 #cancelar{
-    background-color: red;
+    background-color: #ff0000;
     color: white;
-    border: none;
+    border: 1px solid black;
     padding: 5px;
     cursor: pointer;
 }
+
 ul li img{
     width: 100%;
 }
@@ -60,10 +68,26 @@ ul{
 }
 li{
     max-width: 25%;
+    max-height: 200px;
     list-style: none;
+    position: relative;
+    overflow-y: hidden;
 }
-li a {
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.45);
+.img-link{
+    padding: 16px;
+    background-color: rgba(0, 0, 0, 0.692);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    opacity: 0;
+    transition: all ease 0.5s;
+
+}
+.img-link:hover{
+    opacity: 1 ;
+}
+li a{
     color: white;
-    
+    text-decoration: none;
+}

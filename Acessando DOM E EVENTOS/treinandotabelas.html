@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinado tabelas </title>
+</head>
+<body>
+    <form id="form" action="#" method="get">
+        <input placeholder="Time" autocomplete="off" type="text" name="" id="time">
+    <input placeholder="placar" autocomplete="off" type="number" name="" id="gol">
+    <button type="submit">Enviar</button>
+    </form>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Jogos</th>
+                <th>pontos</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+            <tr>
+                <td>------</td>
+                <td>------</td>
+            </tr>
+        </tbody>
+    </table>
+    <script>
+        const form = document.getElementById('form')
+        form.addEventListener('submit', function(e){
+            e.preventDefault()
+
+            itemTabela()
+        })
+
+        let novalinha = ''
+        function itemTabela(){
+            let time = document.getElementById('time')
+            let placar = document.getElementById('gol')
+            let tabela = '<tr>'
+                tabela += `<td> ${time.value} <td/>`
+                tabela += `<td> ${placar.value} <td/>`
+                tabela += '<tr/>'
+
+                 novalinha += tabela
+
+
+                let body = document.getElementById('tbody')
+                body.innerHTML = novalinha
+
+        }
+
+    </script>
+</body>
+</html>

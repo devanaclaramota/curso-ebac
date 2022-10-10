@@ -8,10 +8,10 @@
 </head>
 <body>
     <h1>Inserindo dados na tebela através do DOM</h1>
-    <form action="#" method="get">
+    <form id="form" action="#" method="get">
         <input placeholder="Nome" id="nome" type="text">
         <input placeholder="Telefone" type="tel" name="" id="tel">
-        <button type="submit" onclick="adicionar()">Adicionar+</button>
+        <button type="submit">Adicionar+</button>
         <button type="reset">Cancelar</button>
     </form>
     <table>
@@ -21,46 +21,37 @@
         </thead>   
         <tbody id="tbody">
             <tr id="tr">
-
+                <td>-----</td>
+                <td>-----</td>
             </tr>
            
         </tbody>   
     </table>
+
     <script>
-        function adicionar(){
-             
-            addNome()
-            addTel()
+        
+        let form = document.getElementById('form')
+        form.addEventListener('submit',  function (e){
+         e.preventDefault()
+            let linhas = ''
+        let nome = document.getElementById('nome')
+        let tel = document.getElementById('tel')
+        let novasLinhas = '<tr>'
+        novasLinhas += `<td> ${nome.value} <td/>`     
+        novasLinhas += `<td> ${tel.value} <td/>`
+        novasLinhas += '<tr/>'
+
+        linhas += novasLinhas
 
 
-        }
+        nome.value = ''
+        tel.value = ''
 
+        let tbody = document.querySelector ('tbody')
+        tbody.innerHTML = linhas
 
-
-            function addNome(){
-            let inputNome = document.getElementById('nome')
-            let novoNome = document.createElement('td')
-            let textNome = document.createTextNode(inputNome.value)
-            novoNome.appendChild(textNome)
-            let tr = document.getElementById('tr')
-            tr.appendChild(novoNome)
-            inputNome.value = ''
-            }
-            
-            function addTel(){
-                let tel = document.getElementById('tel')
-                let novoTel = document.createElement('td')
-                let textTel = document.createTextNode(tel.value)
-                novoTel.appendChild(textTel)
-                let tr = document.getElementById('tr')
-                tr.appendChild(novoTel)
-
-                tel.value = ''
-
-
-            }
-
-    </script>
+ })
+</script>
 
 </body>
 </html>
