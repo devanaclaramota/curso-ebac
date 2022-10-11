@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <article>
+        <label for="v1">Valor 1</label>
+        <input type="number" name="" id="v1">
+
+        <label for="v2">Valor 2 </label>
+        <input type="number" name="" id="v2">
+         
+        <button id="btn">Somar</button>
+    </article>
+    <p id="res">
+        Resultado  
+    </p>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $('#btn').click(function (){
+                let v1 = Number( $('#v1').val())
+                let v2 = Number( $('#v2').val())
+
+                let soma = v1 + v2
+
+                $('#res').text(soma)
+
+            })
+
+
+        })
+       
+
+    </script>
+      /* let tv1 = document.getElementById('v1')
+      let tv2 = document.getElementById('v2')
+      v1 = Number(tv1.value)
+      v2 = Number(tv2.value)
+     let soma =  v1 + v2
+
+     let res = document.getElementById('res')
+
+      res.innerHTML = soma
+      */
+</body>
+</html>
