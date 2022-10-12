@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+header{
+    background-color: rgb(29, 29, 106);
+    height: 60px ;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+header a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+span{
+    color: white;
+    cursor: pointer;
+}
+h2{
+    padding: 30px;
+}
+nav{
+    background-color: rgb(87, 87, 248);
+    height: 35px;
+    margin: auto;
+    display: none;
+   
+}
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    list-style: none;
+    padding: 8px;
+
+}
+nav a {
+    text-decoration: none;
+    color: white;
+   
+}
+nav a:hover{
+    background-color: rgb(153, 153, 231);
+    padding: 4px;
+    border-radius: 3px;
+}
+
+#banner{
+    padding: 40px;
+}
+
+main{
+    background-color: lightgray;
+    margin: auto;
+    width: 900px;
+}
+img{
+    height: 150px;
+}
+
+#sobre{
+    display: flex;
+    padding: 16px;
+    
+}
+#sobre img{
+    margin: 8px;
+}
+#sobre p {
+    margin: 8px;
+}
+#destaque , #promo{
+    display: flex;
+    flex-wrap: wrap;
+}
+#destaque div, #promo div{
+    padding: 10px;
+    
+}
+#destaque div p , #promo div p{
+    padding: 5px;
+
+}
+#destaque div button, #promo div button{
+    width: 100%;
+    background-color: rgb(82, 135, 82);
+    color: white;
+    border: none;
+    padding: 4px;
+    border-radius: 3px;
+}
+#destaque div button:hover,  #promo div button:hover{
+    background-color: rgb(79, 203, 79) ;
+}
+form{
+   padding: 40px;
+
+
+}
+input{
+    margin: 4px;
+}
+form button{
+    width: 50px;
+}
+.logo{
+    height: 30px;
+}
+footer{
+    background-color: black;
+    padding: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}

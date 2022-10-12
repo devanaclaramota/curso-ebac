@@ -9,7 +9,7 @@ $(document).ready(function(){
       $(itemNovo).appendTo('ul')
 
       $('#tarefa').val('')
-
+      //li ou novo item quando clicado marca todos da lista 
       $('li').click(function(){
          $('li').css('text-decoration', 'line-through')
       })
