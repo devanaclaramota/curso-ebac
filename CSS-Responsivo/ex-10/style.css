@@ -101,7 +101,7 @@ header a:hover{
 
 }
 @media screen and (min-width:824px){
-    header , main{
+     main{
         width: 1024px;
         margin: auto;
     }
