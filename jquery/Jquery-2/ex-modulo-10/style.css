@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-color: lightblue;
+    padding: 40px;
+
+}
+article{
+    background-color: rgb(244, 243, 243);
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    
+}
+h1{
+    padding: 16px;
+}
+div{
+    padding: 6px;
+}
+input{
+    display: flex;
+   
+}

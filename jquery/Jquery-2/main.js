@@ -10,9 +10,13 @@ burger.addEventListener('click', function(e){
   
    
 })
-// jquery aqui
 $(document).ready(function(){
     $('#banner').slick({
         autoplay : true, 
     })
+    $('#burguer').click(function(){
+        $('#nav').slideToggle()
+    })
+    $('#tel').mask('(00) 00000-0000')
+
 })
