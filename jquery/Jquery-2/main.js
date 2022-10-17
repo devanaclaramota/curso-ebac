@@ -1,4 +1,4 @@
-const burger = document.getElementById('burguer')
+/*const burger = document.getElementById('burguer')
 burger.addEventListener('click', function(e){
     e.preventDefault()
    let nav = document.getElementById('nav')
@@ -9,14 +9,9 @@ burger.addEventListener('click', function(e){
    }
   
    
-})
+})*/
 $(document).ready(function(){
     $('#banner').slick({
-        autoplay : true, 
-    })
-    $('#burguer').click(function(){
-        $('#nav').slideToggle()
-    })
-    $('#tel').mask('(00) 00000-0000')
-
+        autoplay: true,
+    });
 })

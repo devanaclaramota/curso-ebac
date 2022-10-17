@@ -25,7 +25,7 @@
             </div>
             <div>
                 <label for="cpf">CPF: </label>
-                <input required autocomplete="off" type="number" name="" id="cpf">
+                <input required autocomplete="off" type="text" name="" id="cpf">
             </div>
             <div>
                 <label for="end">Endereço Completo: </label>
@@ -33,10 +33,30 @@
             </div>
             <div>
                 <label for="cep">CEP: </label>
-                <input required autocomplete="off" type="number" name="" id="cep">
+                <input required autocomplete="off" type="text" name="" id="cep">
             </div>
             <button type="submit">Enviar</button>
         </form>
     </article>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="mask/jquery.mask.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+
+            $('#tel').mask('(00) 00000-0000')
+            $('#cpf').mask('000000000-00')
+            $('#cep').mask('00000-000')
+
+        })
+
+
+
+
+
+
+       
+    </script>
 </body>
 </html>
