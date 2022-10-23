@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex bootstrap avançado</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        .card{
+            width: 350px;
+            margin-bottom: 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <div class="navbar">
+            <div class="container">
+                <h1>Grandes Felinos</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                 <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item" ><a href="#">Onça Pintada</a></li>
+                        <li class="nav-item" ><a href="#">Onça Parda</a></li>
+                        <li class="nav-item" ><a href="#">Onça Preta</a></li>
+                        <li class="nav-item" ><a href="#">Jaguatirica</a></li>
+                    </ul>
+                 </nav>
+            </div>
+        </div>
+
+
+    <div id="carousel" class="carousel-slide" data-bs-ride="carousel">
+        <div class="carousel-Inner">
+            <div  class="carousel-item active">
+                <img data-bs-interval="3000"   src="images/pintada.jpg" alt="">
+            </div>
+            <div   class="carousel-item">
+                <img data-bs-interval="3000"  src="images/parda.jpg" alt="">
+            </div>
+            <div   class="carousel-item">
+                <img data-bs-interval="3000"  src="images/preta.jpg"alt="">
+            </div>
+            <div   class="carousel-item">
+                <img data-bs-interval="3000"  src="images/jaguatirica.jpg" alt="">
+
+            <div>
+        </div>
+    </div>
+
+</header>
+   
+
+    
+<main>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Onça pintada card
+                    </div>
+                    <img src="images/pintada.jpg" alt="Imagem onça pintada">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias earum quaerat amet similique, provident voluptate sed consequuntur consequatur aliquid facere sunt nisi. Nulla earum maxime autem repellat nisi dolor.</p>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Onça preta card
+                    </div>
+                    <img src="images/preta.jpg" alt="Imagem onça preta">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias earum quaerat amet similique, provident voluptate sed consequuntur consequatur aliquid facere sunt nisi. Nulla earum maxime autem repellat nisi dolor.</p>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Onça parda card
+                    </div>
+                    <img src="images/parda.jpg" alt="Imagem onça parda">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias earum quaerat amet similique, provident voluptate sed consequuntur consequatur aliquid facere sunt nisi. Nulla earum maxime autem repellat nisi dolor.</p>
+    
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Jaguatirica card
+                    </div>
+                    <img src="images/jaguatirica.jpg" alt="Imagem jaguatirica">
+                    <div class="card-body">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia molestias earum quaerat amet similique, provident voluptate sed consequuntur consequatur aliquid facere sunt nisi. Nulla earum maxime autem repellat nisi dolor.</p>
+    
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+    
+</main>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

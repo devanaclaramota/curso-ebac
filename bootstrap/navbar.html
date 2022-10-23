@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <style>
+       .navbar-nav .nav-link.active{
+        color: #ffffff;
+        }
+        .nav-link{
+            text-align: center;
+        }
+        section{
+            background-color: lightgrey;
+            height: 100vh;
+            padding: 80px;
+        }
+        header{
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <header id="cab">
+        <div class="navbar navbar-expand-lg">
+            <div class="container" >
+                <h1>Titulo da pagina</h1>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav nav-pills navbar-nav">
+                        <li class="nav-item"><a class="nav-link active" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#usu">Usuário</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#prod">Produtos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cab">
+        <section id="sobre">
+            <h2>Sobre</h2>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+        </section>
+        <section id="usu">
+            <h2>Usuário</h2>
+        </section>
+        <section id="prod">
+            <h2>Produtos</h2>
+        </section>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+</body>
+</html>

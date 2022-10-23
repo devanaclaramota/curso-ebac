@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1>toasts são tipos de mensagens  que podem ser de alerta, de erro.</h1>
+    <button id="btn-alert" type="button" class=" btn btn-warning">Checar mensagens</button>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi sapiente repudiandae voluptates unde blanditiis magnam dignissimos molestiae architecto vel provident! Ea atque nemo itaque pariatur. Ipsam in eos quas nemo.</p>
+    <div class="toast-container position-fixed botton-0 end-0">
+        <div id="toast" class="toast">
+            <header class="toast-header"> 
+                <strong>Titulo do alerta!</strong>
+            </header>
+
+
+            <div class="toast-body">
+                <p>Lorem ipsum dolor  oiiiiiiiiiii sit, amet consectetur adipisicing elit. Unde quis qui pariatur provident voluptatibus earum aliquam minus laborum, nostrum alias sit modi quod, repellendus eos. Fugit, repellat odit! Architecto, qui.</p>
+            </div>
+            <div class="mt-2 pt-2 border-top">
+                <button data-bs-dismiss="toast" class="btn btn-danger" type="button">
+                    Descartar
+                </button>
+            </div>
+        </div>
+        
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const ativarToast = document.getElementById('btn-alert')
+        const msg = document.getElementById('toast')
+        if(ativarToast){
+            ativarToast.addEventListener('click', function(){
+                const toast =  new bootstrap.Toast( msg)
+                toast.show()
+            })
+        }
+    </script>
+</body>
+</html>

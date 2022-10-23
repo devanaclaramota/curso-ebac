@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exmodal">
+        Abrir modal
+    </button>
+    <div id="exmodal" class="modal" data-bs-backdrop="static">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>titulo do modal </h5>
+                    <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime fugit, vero officiis ratione nisi in similique nam soluta nihil fugiat amet sint quas, dolorem sit doloremque quisquam repellat placeat earum?</p>
+                </div>
+                <div class="modal-footer">
+                    
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cancelar</button>
+                    <button data-bs-dismiss="modal" type="button" class="btn btn-success">Aceitar</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentloaded', function(){
+            const modal = new bootstrap.modal('#exmodal')
+            modal.show()
+        })
+    </script>
+</body>
+</html>
