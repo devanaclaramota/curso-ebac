@@ -1,0 +1,103 @@
+body{
+    background-color: #000000;
+}
+.navbar-brand img{
+    width: 180px;
+}
+.header{
+    background-color: #191919;
+    color: white;
+
+}
+.navbar{
+    max-width: 1200px;
+    margin: auto;
+}
+.header .nav-link{
+    color: white;
+}
+.btn{
+    width: 204px;
+}
+.carousel-inner{
+    margin: auto;
+    width: 1200px;
+    height: 500px;
+}
+.container iframe{
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.p-sobre{
+    width: 430px;
+    height: 288px;
+    color: white;
+    margin-left: 30px;
+}
+.container h2{
+    color: white;
+}
+.bi-youtube{
+    color: white;
+}
+#sucesso{
+    width: 1200px;
+}
+.card{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width: 190px;
+    height: 270px;
+}
+.card img{
+    width: 187px;
+    height: 267px;
+}
+.assine{
+    background-color: #191919;
+}
+#p-assine{
+    color: white;
+}
+.assine img{
+    margin-top: 120px;
+    margin-left: 40px;
+    width: 100px;
+}
+#globoplay {
+    margin-top: 40px;
+    margin-right: 5px;
+}
+#globoplay .container{
+    background-color: #191919;
+    width: 1200px;
+    height: 500px;
+    border-radius: 10px;
+    padding: 40px;
+   
+}
+#globoplay .container img{
+    width: 500px;
+}
+#globoplay .card{
+    background-color:#191919;
+    border: 1px solid white;
+    color: white;
+    height: auto;
+
+}
+#globoplay p{
+    color: white;
+    padding: 30px;
+}
+#globoplay button{
+    margin-left: 16px;
+}
+#globoplay a {
+
+    text-decoration: none;
+    color: white;
+}
+#curtir .card{
+    background-color: #191919;
+}

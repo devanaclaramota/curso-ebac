@@ -1,0 +1,56 @@
+header{
+    background-color: #e15f41 ;
+   
+}
+/*
+font-family: 'Pacifico', cursive;
+font-family: 'Roboto', sans-serif;
+*/
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand{
+    color: white;
+    font-family: 'Pacifico', cursive;
+}
+.nav .nav-link.active{
+    background-color: white;
+    color: #e15f41;
+}
+.nav .nav-link{
+    color: white;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.navbar-toggler{
+    background-color: white;
+}
+#sobre{
+    background-color: #e15e4184;
+}
+#eventos{
+    background-color: lightgrey;
+}
+#cardapio {
+    background-color:  #797979fc;
+}
+.icon{
+    color: #e15f41;
+}
+.redes li {
+    list-style: none;
+}
+
+
+@media (max-width:767px){
+    .carousel-item img{
+        height: 280px;
+    }
+    #sobre-rest{
+        padding: 20px;
+    }
+
+}
