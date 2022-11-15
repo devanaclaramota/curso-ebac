@@ -1,4 +1,17 @@
-@import 'var/reset.css';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+.list {
+  list-style: none;
+}
+.containerGeral {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
 body {
   background-color: #f5f6fa;
 }
@@ -17,15 +30,13 @@ header .container {
   width: 100%;
   margin: 0 auto;
 }
-header li {
-  list-style: none;
-}
 header .menu {
   display: flex;
 }
 header .menu li {
   font-weight: bold;
   margin-left: 24px;
+  list-style: none;
 }
 header .menu li a {
   color: #fff;
@@ -33,28 +44,39 @@ header .menu li a {
 }
 section {
   padding: 56px 0;
-}
-section .container {
   max-width: 1024px;
   width: 100%;
   margin: 0 auto;
 }
-section .container .products {
+@media (max-width: 1023px) {
+  section {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    list-style: none;
+  }
+  section .container {
+    max-width: 80%;
+  }
+  section .products {
+    grid-template-columns: repeat(2, 48.5%);
+    column-gap: 3%;
+  }
+}
+section .products {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(3, 32.66%);
   column-gap: 1%;
   row-gap: 4%;
   width: 100%;
-}
-section .container .products li {
   list-style: none;
 }
-section .container .products .product-item img {
+section .products .product-item img {
   width: 100%;
   border-radius: 16px;
 }
-section .container .products .product-button {
+section .products .product-button {
   display: block;
   background-color: #44bd32;
   color: #fff;
@@ -64,23 +86,19 @@ section .container .products .product-button {
   margin-top: 8px;
   text-decoration: none;
 }
-section .container .products .product-button:hover {
+section .products .product-button:hover {
   background-color: #4cd137;
 }
-@media screen and (max-width: 1023px) {
-  .container {
-    max-width: 80%;
+@media (max-width: 767px) {
+  section {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
   }
-  .products {
-    grid-template-columns: repeat(2, 48.5%);
-    column-gap: 3%;
-  }
-}
-@media screen and (max-width: 767px) {
-  .products {
+  section .products {
     display: block;
   }
-  .product-item {
+  section .product-item {
     margin-bottom: 32px;
   }
 }
