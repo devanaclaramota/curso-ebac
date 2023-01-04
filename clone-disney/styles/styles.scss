@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+$cordefundo : #040714;
+$cortextoprincipal: silver;
+$corsecundaria : #f9f9f9;
+
+
+
+
+@mixin text($fontSize:16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $cortextoprincipal;
+}
+.text--big{
+    @include text(18px)
+}
+.text--medium{
+    @include text
+}
+.text--small{
+    @include text(12px)
+}
+
+body{
+    background-color: $cordefundo;
+}
+
+.hero{
+    
+    min-height: 100vh;
+    background-image: url('../images/images/hero_desktop.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    padding: 200px;
+    .logo{
+          
+        img{
+            width: 200px;
+        }
+    }
+    .assine{
+        display: flex;
+        align-items: center;
+            
+        .combo{
+            padding: 30px;
+            img{
+             width: 100px;
+             
+             
+             }
+             #star{
+                width: 170px;
+        }
+       
+      }
+    }
+   
+    
+}
+
+
+
+
+

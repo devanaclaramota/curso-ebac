@@ -1,0 +1,52 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text--big {
+  font-size: 18px;
+  line-height: 28px;
+  color: silver;
+}
+
+.text--medium {
+  font-size: 16px;
+  line-height: 26px;
+  color: silver;
+}
+
+.text--small {
+  font-size: 12px;
+  line-height: 22px;
+  color: silver;
+}
+
+body {
+  background-color: #040714;
+}
+
+.hero {
+  min-height: 100vh;
+  background-image: url("../images/images/hero_desktop.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 200px;
+}
+.hero .logo img {
+  width: 200px;
+}
+.hero .assine {
+  display: flex;
+  align-items: center;
+}
+.hero .assine .combo {
+  padding: 30px;
+}
+.hero .assine .combo img {
+  width: 100px;
+}
+.hero .assine .combo #star {
+  width: 170px;
+}/*# sourceMappingURL=styles.css.map */
