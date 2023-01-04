@@ -1,0 +1,25 @@
+{
+  "name": "curso-ebac",
+  "version": "1.0.0",
+  "description": "repositório criado para acompanhar o desenvolvimento de projetos e exercicios do curso engenheiro front-end , EBAC.",
+  "main": "index.js",
+  "scripts": {
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devanaclaramota/curso-ebac.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devanaclaramota/curso-ebac/issues"
+  },
+  "homepage": "https://github.com/devanaclaramota/curso-ebac#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  }
+}

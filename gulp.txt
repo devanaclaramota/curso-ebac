@@ -1,0 +1,38 @@
+Anotações sobre comandos para impotações, exportaçoes e comandos no gulp.
+
+Para usar o gulp, depois de criada a pasta no repositório, deve-se dar o comando npm init para iniciar no node, dar o ok para os questões. E depois disso instalar a dependencia do gulp com npm install --save-dev gulp.
+Será criado no vsCode, as pastas -node_modules
+-license
+-package lock 
+-package json
+
+Adicionar a pasta node_modules no arquivo .gitignore para que nao seja commitada
+
+Dentro de package json vou criar um novo script que vai se chamar gulp e executar gulp. 
+
+Criar um arquivo gulpfile.js e dar no terminal npm run gulp 
+
+Devemos importar para dentro de gulpfile o prorpio gulp que adcionamos la em packagejson pra isso usamos
+const gulp = require('gulp')
+--------------
+ESModules é a capacidade de modularizar o js e importar um arquivo dentro do outro. Assim permitindo que seja criada funções e blocos em arquivos separados e permitindo que esses arquivos sejam chamados dentro de outro.
+
+
+Isso é importante para o gulp pq é basicamente o que ele faz. Vamos escrever tarefas e importa-las para o arquivo gulp para que ela seja assistida e rode automaticamente. 
+
+- Para que uma função possa ser chamada em outro arquivo deve-se exportar essa função atraves do comando 
+module.exports = NOMEDAFUNÇÃO
+
+-Para chamar a função de outro arquivo deve-se criar uma variavel e dentro dela ficará a função trazida do arquivo externo. 
+const somar = require('NOMEDOARQUIVO')
+
+As tarefas que vamos criar podem ser executadas em serie ou em paralelo 
+
+
+--------------------------------------------------------
+
+Vamos criar uma tarefa capaz de compilar os arquivos sass e transforma-lo em css. Pra isso vamos instalar plugins no gulp. 
+plugin para arquivos scss
+
+npm install --save-dev gulp-sass (para compilar)
+npm install --save-dev sass (para o sass)
