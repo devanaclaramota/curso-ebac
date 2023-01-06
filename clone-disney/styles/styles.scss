@@ -9,69 +9,59 @@ $cordefundo : #040714;
 $cortextoprincipal: silver;
 $corsecundaria : #f9f9f9;
 
-
-
-
-@mixin text($fontSize:16px){
-    font-size: $fontSize;
-    line-height: $fontSize + 10px;
-    color: $cortextoprincipal;
-}
-.text--big{
-    @include text(18px)
-}
-.text--medium{
-    @include text
-}
-.text--small{
-    @include text(12px)
-}
-
 body{
     background-color: $cordefundo;
 }
 
+
 .hero{
-    width: 500px;
+    padding: 5.6vw;
     min-height: 100vh;
     background-image: url('../images/images/hero_desktop.jpeg');
     background-size: cover;
     background-repeat: no-repeat; 
-    padding: 200px;
-    .logo{
-          img{
-            width: 600px;
-        }
-        
-    }
     
+    .logo{
+        padding: 30px;
+        img{
+            width: 420px;
+        }
+        p{
+            color: $cortextoprincipal;
+            margin-left: 80px;
+
+        }
+    }
     .assine{
-        width: 500px;
         display: flex;
         align-items: center;
-            
+        
         .combo{
-            width: 500px;
-            padding: 30px;
+          
+            margin-right: 40px;
             img{
-             width: 100px;
-             
-             .btn{
-                width: 300px;
-                
-             }
-             }
-             #star{
-                width: 300px;
+                width: 200px;
+
+            }
+            #star{
+                margin-bottom: 17px;
+                width: 250px;
+
+            }
+            button{
+                width: 250px;
+                height: 50px;
+                color: $cortextoprincipal;
+                background-color:#7828FF ;
+                border-radius: 5px;
+                cursor: pointer;
+
+            }
+            
+      .p{
+          color: $cortextoprincipal;
+               
+            }  
         }
-       
-      }
     }
-   
-    
 }
-
-
-
-
-
