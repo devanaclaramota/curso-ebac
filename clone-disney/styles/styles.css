@@ -40,7 +40,11 @@ body {
   margin-bottom: 17px;
   width: 250px;
 }
-.hero .assine .combo button {
+.hero .assine .combo .p {
+  color: silver;
+}
+
+.btn {
   width: 250px;
   height: 50px;
   color: silver;
@@ -48,6 +52,30 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.hero .assine .combo .p {
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.banner div {
+  align-items: center;
+}
+.banner div img {
+  width: 292px;
+  padding: 20px;
+}
+.banner div h2 {
   color: silver;
+  text-align: center;
+}
+.banner div p {
+  width: 270px;
+  color: silver;
+  text-align: center;
+  padding: 30px;
+}
+.banner #select {
+  width: 400px;
+  background-image: url(../images/images/fundo_combo_plus.png);
 }/*# sourceMappingURL=styles.css.map */

@@ -48,7 +48,15 @@ body{
                 width: 250px;
 
             }
-            button{
+            
+            
+      .p{
+          color: $cortextoprincipal;
+               
+            }  
+        }
+    }
+}.btn{
                 width: 250px;
                 height: 50px;
                 color: $cortextoprincipal;
@@ -57,11 +65,34 @@ body{
                 cursor: pointer;
 
             }
-            
-      .p{
-          color: $cortextoprincipal;
-               
-            }  
-        }
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    div{
+        align-items: center;
+     img{
+        width: 292px;
+        padding: 20px;
+
     }
+    h2{
+        color: $cortextoprincipal;
+        text-align: center;
+    }
+    p{
+        width: 270px;
+        color: $cortextoprincipal;
+        text-align: center;
+        padding: 30px;
+
+    }
+    }
+    #select{
+        width: 400px;
+        
+        background-image: url(../images/images/fundo_combo_plus.png);
+
+    }
+   
 }
