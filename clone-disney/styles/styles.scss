@@ -32,31 +32,37 @@ body{
 }
 
 .hero{
-    
+    width: 500px;
     min-height: 100vh;
     background-image: url('../images/images/hero_desktop.jpeg');
     background-size: cover;
     background-repeat: no-repeat; 
     padding: 200px;
     .logo{
-          
-        img{
-            width: 200px;
+          img{
+            width: 600px;
         }
+        
     }
+    
     .assine{
+        width: 500px;
         display: flex;
         align-items: center;
             
         .combo{
+            width: 500px;
             padding: 30px;
             img{
              width: 100px;
              
-             
+             .btn{
+                width: 300px;
+                
+             }
              }
              #star{
-                width: 170px;
+                width: 300px;
         }
        
       }
