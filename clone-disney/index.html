@@ -9,11 +9,18 @@
 </head>
 
 <body>
+    <header>
+        <img class="img-logo hidden" src="images/images/disneyplus.svg" alt="">
+        <div>
+            <button class="hidden">Assine agora</button>
+            <button class="entrar">Entrar</button>
+        </div>
+    </header>
     
  <section class="hero">
     <div class="logo">
         <img src="images/images/disneyplus.svg" alt="logo disney plus">
-        <p class="text--big">As melhores hitórias em um só lugar.</p>
+        <h3>As melhores hitórias em um só lugar.</h3>
     </div>
     <div class="assine">
         <div class="combo">
@@ -51,6 +58,153 @@
         <button class="btn">ASSINE AGORA</button>
     </div>
  </section>
+ <section class="shows">
+    <h3>
+        <button class="active" onclick="abrir(event,'breve')">EM BREVE</button> 
+        <button onclick="abrir(event,'principal')">MAIS POPULARES</button> 
+        <button onclick="abrir(event,'mais')">MAIS NO STAR+</button> 
+      
+    </h3>
+    <div id="breve" class="filmes -active">
+        <img src="images/em breve/desencantada.jpg" alt="">
+        <img src="images/em breve/willow.jpg" alt="">
+        <img src="images/em breve/lobisomem.jpg" alt="">
+        <img src="images/em breve/spidey.jpg" alt="">
+        <img src="images/em breve/the_santa_clauses.jpg" alt="">
+        <img src="images/em breve/sem_limites.jpg" alt="">
+    
+    </div>
+
+    <div id="principal" class="filmes">
+        <img src="images/lancamentos/libertadores.jpg" alt="">
+        <img src="images/lancamentos/belair.jpg" alt="">
+        <img src="images/lancamentos/os_simpson.jpg">
+        <img src="images/lancamentos/premier_league.jpg" alt="">
+        <img src="images/lancamentos/nba.jpg" alt="">
+        <img src="images/lancamentos/the_kardashians.jpg" alt="">
+    
+    </div>
+
+    <div id="mais" class="filmes">
+        <img src="images/procurados/bluey.jpg" alt="">
+        <img src="images/procurados/cavaleira_da_lua.jpg" alt="">
+        <img src="images/procurados/red.jpg" alt="">
+        <img src="images/procurados/obi_wan.jpg" alt="">
+        <img src="images/procurados/tudo_igual_sqn.jpg" alt="">
+        <img src="images/procurados/o_incrivel_dr_pol.jpg" alt="">
+    
+    </div>
+    
+ </section>
+ <section class="doseujeito">
+    <img src="images/images/tv_pc_tablet_celular.png" alt="">
+    <div>
+        <h3>Assista do seu jeito</h3>
+        <p>Apriveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4k não para de crescer. Além disso, para a felicidade de todos é possivel assistir em até 4 telas ao mesmo tempo.</p>
+    </div>
+ </section>
+ <section class="rei-leao">
+        <img src="images/images/fundo_rei_leao.png" alt="">
+        <div>
+        <h3>Baixe filmes e series</h3>
+        <p>Apriveite a tela grande da TV ou assista no tablet, laptop, celular e outros aparelhos. Nossa seleção de títulos em 4k não para de crescer. Além disso, para a felicidade de todos é possivel assistir em até 4 telas ao mesmo tempo.</p>
+        </div>
+</section>
+<section class="dispositivos">
+    <h3>Diponível nos seus dispositivos favoritos</h3>
+    <ul class="list-devices">
+        <li>
+            <img src="images/dispositivos/computador.png" alt=""> <h4>Computador</h4>
+            <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>PC Windows</li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/dispositivos/tv.png" alt=""> <h4>TV</h4>
+            <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>PC Windows</li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/dispositivos/videogames.png" alt=""> <h4>Videogames</h4>
+            <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>PC Windows</li>
+            </ul>
+        </li>
+        <li>
+            <img src="images/dispositivos/celular.png" alt=""> <h4>Celulares</h4>
+            <ul>
+                <li>Chrome OS</li>
+                <li>MacOS</li>
+                <li>PC Windows</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+<section class="faq">
+    <ul>
+        <li class="question">
+            <div >
+                Pergunta
+            </div>
+            <div class="ansewer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi libero similique aspernatur dicta autem in animi fugit nam ut itaque blanditiis, ab quas necessitatibus suscipit adipisci perspiciatis. Earum, laborum culpa!
+            </div>
+        </li>
+        <li class="question">
+            <div >
+                Pergunta
+            </div>
+            <div class="ansewer">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi libero similique aspernatur dicta autem in animi fugit nam ut itaque blanditiis, ab quas necessitatibus suscipit adipisci perspiciatis. Earum, laborum culpa!
+            </div>
+        </li>
+    </ul>
+</section>
+    <script>
+        function abrir(event,id){
+            let filmes = document.querySelectorAll('.filmes');
+            for(i = 0; i < filmes.length; i++){
+                filmes[i].style.display= 'none'
+
+            }
+           document.getElementById(id).style.display = 'block';
+            
+        }
+    
+    </script>
+    <script>
+        
+        let question = document.querySelector('.question');
+        question.addEventListener('click', acordion);
+        
+        function acordion(){
+            let ansewer = document.querySelectorAll('.ansewer');
+            for( i =0; i < ansewer.length ; i++)
+            ansewer[i].classList.toggle('exibir');
+        }
+    </script>
+    <script>
+        let hero = document.querySelector('.hero')
+        let altura = hero.clientHeight
+        window.addEventListener('scroll', function(){
+            let posicao = window.scrollY
+            if(posicao > altura){
+                let hidden = document.querySelector('.hidden')
+                hidden.style.visibility = 'visible'
+
+            } else{
+                hidden.style.visibility ='hidden'
+            }
+            
+        })
+    </script>
     
 </body>
 </html>

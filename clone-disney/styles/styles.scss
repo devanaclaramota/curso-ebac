@@ -3,14 +3,17 @@
     padding: 0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 $cordefundo : #040714;
 $cortextoprincipal: silver;
 $corsecundaria : #f9f9f9;
 
+
 body{
     background-color: $cordefundo;
+ 
 }
 
 
@@ -26,7 +29,8 @@ body{
         img{
             width: 420px;
         }
-        p{
+        h3{  font-size: 20px;
+            padding: 20px;
             color: $cortextoprincipal;
             margin-left: 80px;
 
@@ -69,6 +73,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding: 40px;
     div{
         align-items: center;
      img{
@@ -89,10 +94,176 @@ body{
     }
     }
     #select{
+        
         width: 400px;
         
         background-image: url(../images/images/fundo_combo_plus.png);
+        img{
+            margin-left: 50px;
+        }
+        h2{
+            margin-left: 30px;
+            
+        }
+        p{
+            margin-left: 60px;
+        }
+        button{
+            margin-left: 80px;
+        }
 
+    }
+   
+}
+.shows{
+    
+    h3{
+        text-align: center;
+        
+       
+        button{ 
+            background-color: #040714;
+            border: none;
+            color: $cortextoprincipal;
+            text-decoration: none;
+            font-size: 14px;
+            padding: 12px;
+            cursor: pointer;
+            
+            &:hover{
+                text-decoration: underline;
+            }
+            
+        }
+        
+    }
+    .filmes{
+        display: none;
+        //display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         padding: 4vw;
+        
+         img{
+           max-width: 400px;
+            padding: 20px;
+         }
+        
+    }
+    .-active{
+        align-items: center;
+        display: block;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        padding: 4vw;
+        
+        
+        img{
+            width: 400px;
+            padding: 20px;
+
+         }
+    }
+
+}
+.doseujeito{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    img{
+        width: 50%;
+        margin: 30px;
+        
+    }
+    div{
+        color: $cortextoprincipal;
+        text-align: left;
+        h3{
+            font-size: 24px;
+            padding: 20px;
+        }
+    }
+}
+.rei-leao{
+    position: relative;
+    img{
+        width: 1300px;
+        margin-left: 60px;
+        position:relative;
+    }
+    div{
+        width: 400px;
+        left: 50%;
+        top:200px;
+        position: absolute;
+        color: $cortextoprincipal;
+    }
+}
+.dispositivos{
+        text-align: center;
+        color: $cortextoprincipal;
+        padding: 40px;
+    .list-devices{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 40px;
+        li{
+        color: $cortextoprincipal;
+        list-style: none;
+        
+    }
+    }
+    img{
+            width:200px ;
+        }
+}
+.faq{
+    margin: 40px;
+    ul{
+        li{
+            background-color: #2f3033;
+            padding: 10px 30px;
+            margin-top: 10px;
+            color: $cortextoprincipal;
+            text-align:justify ;
+            list-style: none;
+            cursor: pointer;
+            .ansewer{
+                display: none;
+            }
+            .exibir{
+                display: block;
+            }
+        }
+    }
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: sticky;
+    top:0;
+    .hidden{
+            visibility: hidden;
+        }
+  .img-logo{
+        width: 100px;
+
+    }
+    div{
+        
+        button{
+            color: white;
+            background-color: blue;
+            padding: 12px;
+            cursor: pointer;
+        }
+        .entrar{
+            background-color: #040714;
+        }
+        
+        
     }
    
 }

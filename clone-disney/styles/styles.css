@@ -22,7 +22,9 @@ body {
 .hero .logo img {
   width: 420px;
 }
-.hero .logo p {
+.hero .logo h3 {
+  font-size: 20px;
+  padding: 20px;
   color: silver;
   margin-left: 80px;
 }
@@ -57,6 +59,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  padding: 40px;
 }
 .banner div {
   align-items: center;
@@ -78,4 +81,149 @@ body {
 .banner #select {
   width: 400px;
   background-image: url(../images/images/fundo_combo_plus.png);
+}
+.banner #select img {
+  margin-left: 50px;
+}
+.banner #select h2 {
+  margin-left: 30px;
+}
+.banner #select p {
+  margin-left: 60px;
+}
+.banner #select button {
+  margin-left: 80px;
+}
+
+.shows h3 {
+  text-align: center;
+}
+.shows h3 button {
+  background-color: #040714;
+  border: none;
+  color: silver;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 12px;
+  cursor: pointer;
+}
+.shows h3 button:hover {
+  text-decoration: underline;
+}
+.shows .filmes {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 4vw;
+}
+.shows .filmes img {
+  max-width: 400px;
+  padding: 20px;
+}
+.shows .-active {
+  align-items: center;
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  padding: 4vw;
+}
+.shows .-active img {
+  width: 400px;
+  padding: 20px;
+}
+
+.doseujeito {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+.doseujeito img {
+  width: 50%;
+  margin: 30px;
+}
+.doseujeito div {
+  color: silver;
+  text-align: left;
+}
+.doseujeito div h3 {
+  font-size: 24px;
+  padding: 20px;
+}
+
+.rei-leao {
+  position: relative;
+}
+.rei-leao img {
+  width: 1300px;
+  margin-left: 60px;
+  position: relative;
+}
+.rei-leao div {
+  width: 400px;
+  left: 50%;
+  top: 200px;
+  position: absolute;
+  color: silver;
+}
+
+.dispositivos {
+  text-align: center;
+  color: silver;
+  padding: 40px;
+}
+.dispositivos .list-devices {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 40px;
+}
+.dispositivos .list-devices li {
+  color: silver;
+  list-style: none;
+}
+.dispositivos img {
+  width: 200px;
+}
+
+.faq {
+  margin: 40px;
+}
+.faq ul li {
+  background-color: #2f3033;
+  padding: 10px 30px;
+  margin-top: 10px;
+  color: silver;
+  text-align: justify;
+  list-style: none;
+  cursor: pointer;
+}
+.faq ul li .ansewer {
+  display: none;
+}
+.faq ul li .exibir {
+  display: block;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+header .hidden {
+  visibility: hidden;
+}
+header .img-logo {
+  width: 100px;
+}
+header div button {
+  color: white;
+  background-color: blue;
+  padding: 12px;
+  cursor: pointer;
+}
+header div .entrar {
+  background-color: #040714;
 }/*# sourceMappingURL=styles.css.map */
