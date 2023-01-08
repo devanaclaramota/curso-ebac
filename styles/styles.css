@@ -1,0 +1,54 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+}
+header img {
+  width: 120px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+}
+header a:hover {
+  text-decoration: underline;
+  border: 1px solid white;
+}
+
+.synopsis {
+  background-image: url(https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/12/Avatar2.png?w=876&h=484&crop=1);
+  margin: 5vw;
+  height: 700px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.synopsis div {
+  background-color: rgba(62, 62, 62, 0.587);
+  color: white;
+  position: relative;
+  padding: 16px;
+  width: 50%;
+  top: 40%;
+  left: 45%;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 12px;
+}
+.synopsis div h2 {
+  padding: 12px;
+}/*# sourceMappingURL=styles.css.map */
